@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const copyContent = `[폰트: ${selectedFont}]\n${text}`;
+        const copyContent = `[폰트:${selectedFont}]\n내용 : ${text}`;
 
         try {
             await navigator.clipboard.writeText(copyContent);
