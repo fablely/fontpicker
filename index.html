@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>페이블리 폰트 피커 - 나만의 감성 폰트 찾기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>FABLELY Font Picker</h1>
+            <p class="subtitle">모던하고 깔끔하게 폰트를 미리보세요</p>
+        </header>
+
+        <section class="input-section glass-card">
+            <h2 class="section-title">글을 써보세요</h2>
+            <textarea id="text-input" placeholder="여기에 텍스트를 입력하면 아래에서 폰트가 실시간으로 바뀝니다..."></textarea>
+        </section>
+
+        <section class="font-list-section">
+            <h2 class="section-title">폰트 리스트</h2>
+            <div id="font-grid" class="font-grid">
+                <!-- 폰트 아이템들이 여기에 JS로 생성됩니다 -->
+                <div class="loading-msg">폰트를 불러오는 중...</div>
+            </div>
+        </section>
+
+        <div class="action-bar">
+            <button id="btn-copy" class="btn-copy">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 -1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5 1.5M6.75 6.75V4.875c0-.621.504-1.125 1.125-1.125h9.75c.621 0 1.125.504 1.125 1.125V16.125c0 .621-.504 1.125-1.125 1.125h-2.25" />
+                </svg>
+                복사해서 공유하기
+            </button>
+        </div>
+    </div>
+
+    <div id="toast">클립보드에 복사되었습니다!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
