@@ -93,12 +93,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. 복사 기능
     btnCopy.addEventListener('click', async () => {
         const text = textInput.value.trim();
-        
+
         if (!text) {
             showToast('복사할 내용을 입력해주세요!');
             return;
         }
-        
+
         if (!selectedFont) {
             showToast('폰트를 먼저 선택해주세요!');
             return;
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             await navigator.clipboard.writeText(copyContent);
-            showToast('성공적으로 복사되었습니다!');
+            showToast('성공적으로 복사되었습니다!\n카카오톡채널에 붙여넣어 주세요!');
         } catch (err) {
             console.error('Failed to copy: ', err);
             showToast('복사에 실패했습니다. 직접 선택해서 복사해주세요.');
